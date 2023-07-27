@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Terbang Airlines</title>
+
+    <!--bootsrap css-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="css/index.css" rel="stylesheet"> -->
+
+    <!--Fontawesome Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <style>
+      
+      body {
+        background-color: #EBEBEB;
+        padding: 10px;
+      }
+
+      .slidecontainer {
+        width: 100%;
+      }
+
+      .slider {
+        width: 100%;
+        height: 15px;
+        border-radius: 5px;
+        background: #d3d3d3;
+        outline: none;
+      }
+
+      .vertical-line{
+        border-left:1px solid gray;
+      }
+
+    </style>
+
+  </head>
+  
+<body>
+
+  <!--NAVBAR-->
+  <nav class="navbar border navbar-expand-lg bg-white rounded">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="images/logo.svg"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarterbang" aria-controls="navbarterbang" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarterbang">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <ul class="dropdown-menu">
+            </ul>
+          </li>
+        </ul>
+
+        <div class="userprofile">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown" style="margin-right: 6px !important;">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Username</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Setting</a></li>
+                <li><a class="dropdown-item" href="#">Sign Out</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="imgprofile">
+            <img src="images/user.svg" alt="" width="32" height="32" class="rounded-circle me-2">
+        </div>
+        
+      </div>
+    </div>
+  </nav>
+  <!--END NAVBAR-->
+
+  <!--SEASON 1 RUTE PERJALANAN-->
+  <div class="row pt-4">
+
+  <div class="col-xl-4 col-md-6 mb-4">
+    <div class="card py-2">
+      <div class="card-body">
+        <div class="row no-gutters align-items-center">
+          <div class="col mr-2">
+            <div class="text-xs mb-1">From :</div>
+            <div class="h5 mb-0 font-weight-bold text-gray-800" id="berangkat">Jakarta</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xl-1 col-md-6 mb-4">
+    <div class="card py-3" style="border: none !important; background-color: #EBEBEB;">
+      <div class="card-body">
+        <div class="row no-gutters align-items-center">
+          <div class="col">
+            <button type="button" class="btn btn-dark"><i class="fa-solid fa-repeat"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xl-4 col-md-6 mb-4">
+    <div class="card py-2">
+      <div class="card-body">
+        <div class="row no-gutters align-items-center">
+          <div class="col mr-2">
+            <div class="text-xs mb-1">To :</div>
+            <div class="h5 mb-0 font-weight-bold text-gray-800" id="tujuan">Switzerland</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xl-2 col-md-6 mb-4">
+    <div class="card py-2">
+      <div class="card-body">
+        <div class="row no-gutters align-items-center">
+          <div class="col mr-2">
+            <div class="text-xs mb-1">Departure Date :</div>
+            <div class="h5 mb-0 font-weight-bold text-gray-800">Wed, 26 July</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xl-1 col-md-6 mb-4">
+    <div class="card py-3" style="border: none !important; background-color: #EBEBEB;">
+      <div class="card-body">
+        <div class="row no-gutters align-items-center">
+          <div class="col">
+            <button type="button" class="btn btn-dark"><i class="fa-solid fa-search"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+<!--END SEASON 1 RUTE PERJALANAN-->
+
+<div class="row">
+<!--SEASON 2 SIDEBAR LEFT-->
+<div class="col-xl-3 col-md-6">
+  
+  <div class="list-group rounded border-bottom">
+
+    <div class="list-group-item py-3">
+      <div class="d-flex w-100 align-items-center justify-content-between">
+        <strong class="fs-5 fw-semibold mb-1"><a href="#" style="text-decoration: none !important; color: inherit;">Filters</a></strong>
+        <small class="text fw-semibold" style="color: red;"><a href="#" style="text-decoration: none !important; color: inherit;">Reset</a></small>
+      </div>
+    </div>
+
+    <div class="list-group-item py-3">
+      <div class="d-flex w-100 align-items-center justify-content-between">
+        <strong class="mb-1">Transit Amount</strong>
+      </div>
+      <div class="my-3">
+        <div class="">
+          <input type="checkbox" class="form-check-input" id="" name="">
+          <label class="form-check-label" for="">All</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="" name="">
+          <label class="form-check-label" for="">Non-Transit</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="" name="">
+          <label class="form-check-label" for="">1 Stop</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="" name="">
+          <label class="form-check-label" for="">2 Stop</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="list-group-item py-3">
+      <div class="d-flex w-100 align-items-center justify-content-between">
+        <strong class="mb-1">Price Range</strong>
+      </div>
+      <div class="slidecontainer">
+        <input type="range" min="100" max="10000" value="500" class="slider" id="myRange">
+        <p>Price $: <span id="price"></span></p>
+      </div>
+    </div>
+
+    <div class="list-group-item py-3">
+      <div class="d-flex w-100 align-items-center justify-content-between">
+        <strong class="mb-1">Airlines</strong>
+      </div>
+      <div class="my-3">
+        <div class="">
+          <input type="checkbox" class="form-check-input" id="" name="">
+          <label class="form-check-label" for="">All</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="#" name="">
+          <label class="form-check-label" for="">Garuda Airlines</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="" name="">
+          <label class="form-check-label" for="">Lion Airlines</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="" name="">
+          <label class="form-check-label" for="">Batik Airlines</label>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+</div>
+<!--END SEASON 2 SIDEBAR LEFT-->
+
+
+<!--SEASON 3 SIDEBAR RIGHT-->
+<div class="col-xl-9 col-md-6">
+
+  <div class="list-group rounded border-bottom">
+
+    <div class="list-group-item py-3">
+      <div class="d-flex w-100 align-items-center justify-content-between">
+        <strong class="fs-5 fw-semibold mb-1">Garuda Airlines</strong>
+        <small class="">
+          <button class="rounded-circle border-0" style="background-color: red;" data-bs-toggle="collapse" data-bs-target="#dataflight" aria-expanded="true">
+            <i class="fa-solid fa-arrow-down" style="color: white;"></i>
+          </button>
+        </small>
+      </div>
+      <div class="d-flex w-100 d-flex align-items-left">
+        <small class="text" id="">21:12</small>&nbsp;&nbsp;<span class="vertical-line"></span>&nbsp;&nbsp;
+        <small class="text" id="">15 h 5 min</small>
+      </div>
+    </div>
+    
+    <div class="list-group-item py-3 collapse show" id="dataflight">
+
+      <div class="d-flex w-100 align-items-center justify-content-between">
+        <small class="text" id="">Include Free Baggage & Cabin in Capacity</small>
+        <small class="text fw-bold" id=""><i class="fa-solid fa-suitcase"></i>&nbsp; 50 Kg</small>
+      </div>
+
+      <div class="d-flex w-100 align-items-left pt-5">
+        <strong class="col-sm-2" id="">10:00 PM</strong>
+        <strong class="col-sm-1" id=""><i class="fa-solid fa-circle-dot"></i></strong>
+        <strong class="col-sm-3" id="">Jakarta</strong>
+      </div>
+      <div class="d-flex w-100 align-items-left">
+        <small class="col-sm-2" id="">Wed, 26 July</small>
+        <small class="col-sm-1" id=""></small>
+        <small class="col-sm-3" id="">Soekarno Hatta International Airport</small>
+      </div>
+
+      <div class="d-flex w-100 align-items-left pt-3">
+        <strong class="col-sm-2" id=""></strong>
+        <strong class="col-sm-1" id=""><i class="fa-solid fa-plane"></i></strong>
+        <small class="col-sm-3" id="">15 hours 30 minutes</small>
+      </div>
+      <div class="d-flex w-100 align-items-left">
+        <small class="col-sm-2" id=""></small>
+        <small class="col-sm-1" id=""></small>
+        <small class="col-sm-3" id="" style="color: red;">Non-Transit</small>
+      </div>
+
+      <div class="d-flex w-100 align-items-left pt-3">
+        <strong class="col-sm-2" id="">01:30 PM</strong>
+        <strong class="col-sm-1" id=""><i class="fa-solid fa-circle-dot"></i></strong>
+        <strong class="col-sm-3" id="">Switzerland</strong>
+      </div>
+      <div class="d-flex w-100 align-items-left">
+        <small class="col-sm-2" id="">Thu, 27 July</small>
+        <small class="col-sm-1" id=""></small>
+        <small class="col-sm-3" id="">Zurich International Airport</small>
+      </div>
+
+      <div class="d-flex w-100 pt-5 mb-5">
+        <small class="text fs-3" id="">USD</small>
+        <small class="text fs-3 fw-bold" id="">&nbsp; $500</small>
+        <small class="text fs-3" id="">&nbsp; /person</small>
+        <button type="button" class="btn btn-primary btn-md fw-bold" id="" style="margin-left: 100px;">Select Flight</button>
+      </div>
+
+    </div>
+  
+  </div>
+</div>
+<!--END SEASON 3 SIDEBAR RIGHT-->
+</div>
+<!--END ROW-->
+    
+<!--Bootstrap Js-->
+<script src="js/bootstrap.bundle.min.js"></script>
+
+<!--Bootstrap Js-->
+<script src="js/pricerange.js"></script>
+
+</body>
+</html>
